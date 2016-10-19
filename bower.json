@@ -1,0 +1,29 @@
+{
+  "name": "falzy",
+  "version": "0.0.0",
+  "description": "Check if the value is undefined, null, empty string, NaN and Infinity.",
+  "main": "falzy.js",
+  "authors": [
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "value",
+    "undefined",
+    "null",
+    "empty-string",
+    "NaN",
+    "Infinity",
+    "false",
+    "falsy",
+    "falzy"
+  ],
+  "homepage": "https://github.com/volkovasystems/falzy",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
