@@ -47,14 +47,19 @@
 */
 
 var falzy = function falzy( value ){
+	/*;
+		@meta-configuration:
+			{
+				"value:required": "*"
+			}
+		@end-meta-configuration
+	*/
+	
 	if( typeof value == "number" ){
-		return isNaN( value ) || !isFinite( value );
-
-	}else{
-		return ( typeof value == "undefined" ||
-			value === null ||
-			value === "" );
+		return ( isNaN( value ) || !isFinite( value ) );
 	}
+
+	return ( typeof value == "undefined" || value === null || value === "" );
 };
 
 if( typeof module != "undefined" ){

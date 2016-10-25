@@ -1,6 +1,6 @@
 {
   "name": "falzy",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Check if the value is undefined, null, empty string, NaN and Infinity.",
   "main": "falzy.js",
   "authors": [
