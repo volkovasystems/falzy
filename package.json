@@ -1,6 +1,6 @@
 {
   "name": "falzy",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Check if the value is undefined, null, empty string, NaN and Infinity.",
   "main": "falzy.js",
   "scripts": {
@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/volkovasystems/falzy/issues"
   },
-  "homepage": "https://github.com/volkovasystems/falzy#readme"
+  "homepage": "https://github.com/volkovasystems/falzy#readme",
+  "dependencies": {
+    "protype": "0.0.0"
+  }
 }

@@ -44,9 +44,25 @@
 	@module-documentation:
 		Check if the value is undefined, null, empty string, NaN and Infinity.
 	@end-module-documentation
+
+	@include:
+		{
+			"protype": "protype"
+		}
+	@end-include
 */
 
-var falzy = function falzy( value ){
+if( typeof require == "function" ){
+	var protype = require( "protype" );
+}
+
+if( typeof window != "undefined" &&
+	!( "protype" in window ) )
+{
+	throw new Error( "protype is not defined" );
+}
+
+this.falzy = function falzy( value ){
 	/*;
 		@meta-configuration:
 			{
@@ -54,14 +70,16 @@ var falzy = function falzy( value ){
 			}
 		@end-meta-configuration
 	*/
-	
-	if( typeof value == "number" ){
+
+	if( protype( value ).NUMBER ){
 		return ( isNaN( value ) || !isFinite( value ) );
 	}
 
-	return ( typeof value == "undefined" || value === null || value === "" );
+	return ( protype( value ).UNDEFINED || value === null || value === "" );
 };
 
-if( typeof module != "undefined" ){
-	module.exports = falzy;
+if( typeof module != "undefined" &&
+	typeof module.exports != "undefined" )
+{
+	module.exports = this.falzy;
 }
