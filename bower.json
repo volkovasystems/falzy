@@ -1,6 +1,6 @@
 {
   "name": "falzy",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Check if the value is undefined, null, empty string, NaN and Infinity.",
   "main": "falzy.js",
   "authors": [
@@ -27,6 +27,6 @@
     "tests"
   ],
   "dependencies": {
-    "protype": "^0.1.0"
+    "protype": "^0.2.0"
   }
 }

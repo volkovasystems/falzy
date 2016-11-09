@@ -60,7 +60,7 @@ if( typeof window != "undefined" && !( "protype" in window ) ){
 	throw new Error( "protype is not defined" );
 }
 
-this.falzy = function falzy( value ){
+var falzy = function falzy( value ){
 	/*;
 		@meta-configuration:
 			{
@@ -78,5 +78,5 @@ this.falzy = function falzy( value ){
 };
 
 if( typeof module != "undefined" && typeof module.exports != "undefined" ){
-	module.exports = this.falzy;
+	module.exports = falzy;
 }
