@@ -56,9 +56,7 @@ if( typeof require == "function" ){
 	var protype = require( "protype" );
 }
 
-if( typeof window != "undefined" &&
-	!( "protype" in window ) )
-{
+if( typeof window != "undefined" && !( "protype" in window ) ){
 	throw new Error( "protype is not defined" );
 }
 
@@ -71,15 +69,14 @@ this.falzy = function falzy( value ){
 		@end-meta-configuration
 	*/
 
-	if( protype( value ).NUMBER ){
+	let valueType = protype( value );
+	if( valueType.NUMBER ){
 		return ( isNaN( value ) || !isFinite( value ) );
 	}
 
-	return ( protype( value ).UNDEFINED || value === null || value === "" );
+	return ( valueType.UNDEFINED || value === null || value === "" );
 };
 
-if( typeof module != "undefined" &&
-	typeof module.exports != "undefined" )
-{
+if( typeof module != "undefined" && typeof module.exports != "undefined" ){
 	module.exports = this.falzy;
 }
