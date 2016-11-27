@@ -52,15 +52,9 @@
 	@end-include
 */
 
-if( typeof require == "function" ){
-	var protype = require( "protype" );
-}
+const protype = require( "protype" );
 
-if( typeof window != "undefined" && !( "protype" in window ) ){
-	throw new Error( "protype is not defined" );
-}
-
-var falzy = function falzy( value ){
+const falzy = function falzy( value ){
 	/*;
 		@meta-configuration:
 			{
@@ -77,6 +71,4 @@ var falzy = function falzy( value ){
 	return ( valueType.UNDEFINED || value === null || value === "" );
 };
 
-if( typeof module != "undefined" && typeof module.exports != "undefined" ){
-	module.exports = falzy;
-}
+module.exports = falzy;
