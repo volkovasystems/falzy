@@ -34,6 +34,9 @@
 			"file": "falzy.js",
 			"module": "falzy",
 			"author": "Richeve S. Bebedor",
+			"contributors": [
+				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+			],
 			"eMail": "richeve.bebedor@gmail.com",
 			"repository": "https://github.com/volkovasystems/falzy.git",
 			"test": "falzy-test.js",

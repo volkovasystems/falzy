@@ -1,10 +1,13 @@
 {
   "name": "falzy",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Check if the value is undefined, null, empty string, NaN and Infinity.",
   "main": "falzy.js",
+  "support": "falzy.support.js",
+  "deploy": "falzy.deploy.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel falzy.js -o falzy.support.js && webpack",
+    "test": "mocha falzy-test.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +25,9 @@
     "falzy"
   ],
   "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+  "contributors": [
+    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/volkovasystems/falzy/issues"
