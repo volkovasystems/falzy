@@ -30,6 +30,6 @@
     "tests"
   ],
   "dependencies": {
-    "protype": "^0.4.0"
+    "protype": "^0.6.0"
   }
 }
