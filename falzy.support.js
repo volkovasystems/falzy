@@ -55,23 +55,23 @@
 	@end-include
 */
 
-const protype = require( "protype" );
+var protype = require("protype");
 
-const falzy = function falzy( value ){
+var falzy = function falzy(value) {
 	/*;
-		@meta-configuration:
-			{
-				"value:required": "*"
-			}
-		@end-meta-configuration
-	*/
+ 	@meta-configuration:
+ 		{
+ 			"value:required": "*"
+ 		}
+ 	@end-meta-configuration
+ */
 
-	let valueType = protype( value );
-	if( valueType.NUMBER ){
-		return ( isNaN( value ) || !isFinite( value ) );
+	var valueType = protype(value);
+	if (valueType.NUMBER) {
+		return isNaN(value) || !isFinite(value);
 	}
 
-	return ( valueType.UNDEFINED || value === null || value === "" );
+	return valueType.UNDEFINED || value === null || value === "";
 };
 
 module.exports = falzy;
