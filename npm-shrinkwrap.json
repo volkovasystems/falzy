@@ -1,6 +1,6 @@
 {
   "name": "falzy",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "dependencies": {
     "babel-runtime": {
       "version": "6.20.0",
@@ -13,9 +13,9 @@
       "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.4.1.tgz"
     },
     "protype": {
-      "version": "0.6.0",
-      "from": "protype@>=0.6.0 <0.7.0",
-      "resolved": "https://registry.npmjs.org/protype/-/protype-0.6.0.tgz",
+      "version": "0.7.0",
+      "from": "protype@>=0.7.0 <0.8.0",
+      "resolved": "https://registry.npmjs.org/protype/-/protype-0.7.0.tgz",
       "dependencies": {
         "babel-runtime": {
           "version": "6.20.0",
