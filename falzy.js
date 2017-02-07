@@ -66,12 +66,11 @@ const falzy = function falzy( value ){
 		@end-meta-configuration
 	*/
 
-	let valueType = protype( value );
-	if( valueType.NUMBER ){
+	if( protype( value, NUMBER ) ){
 		return ( isNaN( value ) || !isFinite( value ) );
 	}
 
-	return ( valueType.UNDEFINED || value === null || value === "" );
+	return ( protype( value, UNDEFINED ) || value === null || value === "" );
 };
 
 module.exports = falzy;
