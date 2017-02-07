@@ -28,5 +28,6 @@
     "tests"
   ],
   "dependencies": {
+    "protype": "^0.15.0"
   }
 }
