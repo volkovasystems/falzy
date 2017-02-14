@@ -1,8 +1,9 @@
 {
   "name": "falzy",
-  "version": "0.11.0",
+  "version": "0.12.0",
   "description": "Check if the value is undefined, null, empty string, NaN and Infinity.",
   "main": "falzy.deploy.js",
+  "support": "falzy.support.js",
   "authors": [
     "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
     "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
@@ -28,6 +29,6 @@
     "tests"
   ],
   "dependencies": {
-    "protype": "^0.15.0"
+    "protype": "^0.16.0"
   }
 }
