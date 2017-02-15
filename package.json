@@ -1,13 +1,13 @@
 {
   "name": "falzy",
-  "version": "0.12.0",
+  "version": "0.13.0",
   "description": "Check if the value is undefined, null, empty string, NaN and Infinity.",
   "main": "falzy.js",
   "support": "falzy.support.js",
   "deploy": "falzy.deploy.js",
   "browser": "falzy.deploy.js",
   "scripts": {
-    "build": "babel falzy.js -o falzy.support.js && webpack --progress",
+    "build": "babel falzy.js --out-file falzy.support.js --source-maps && webpack --progress",
     "test": "mocha falzy-test.js"
   },
   "repository": {
@@ -35,8 +35,8 @@
   },
   "homepage": "https://github.com/volkovasystems/falzy#readme",
   "dependencies": {
-    "babel-runtime": "^6.22.0",
-    "protype": "^0.16.0"
+    "babel-runtime": "^6.23.0",
+    "protype": "^0.17.0"
   },
   "devDependencies": {
     "babel-cli": "^6.23.0",
