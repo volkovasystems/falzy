@@ -12,4 +12,5 @@ webpack \
 --dev && \
 bower install \
 protype \
---save
+--save \
+--force-latest
