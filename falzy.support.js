@@ -45,17 +45,13 @@
               	@end-module-configuration
               
               	@module-documentation:
-              		Check if the value is undefined, null, empty string, NaN and Infinity.
+              		Check if the value is undefined, null, empty string, and NaN.
               	@end-module-documentation
               
-              	@include:
-              		{
-              			"protype": "protype"
-              		}
-              	@end-include
+              	@note:
+              		This module should not have a dependency and should remain as simple as possible.
+              	@end-note
               */
-
-var protype = require("protype");
 
 var falzy = function falzy(value) {
 	/*;
@@ -66,11 +62,11 @@ var falzy = function falzy(value) {
                                    	@end-meta-configuration
                                    */
 
-	if (protype(value, NUMBER)) {
-		return isNaN(value) || !isFinite(value);
+	if (typeof value == "number") {
+		return isNaN(value);
 	}
 
-	return protype(value, UNDEFINED) || value === null || value === "";
+	return typeof value == "undefined" || value === null || value === "";
 };
 
 module.exports = falzy;

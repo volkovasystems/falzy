@@ -1,6 +1,6 @@
 {
   "name": "falzy",
-  "version": "0.17.0",
+  "version": "0.18.0",
   "description": "Check if the value is undefined, null, empty string, NaN and Infinity.",
   "main": "falzy.deploy.js",
   "support": "falzy.support.js",
@@ -15,7 +15,6 @@
     "null",
     "empty-string",
     "NaN",
-    "Infinity",
     "false",
     "falsy",
     "falzy"
@@ -27,8 +26,5 @@
     "bower_components",
     "test",
     "tests"
-  ],
-  "dependencies": {
-    "protype": "^0.21.0"
-  }
+  ]
 }
