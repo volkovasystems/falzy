@@ -16,3 +16,4 @@ assert.equal( falzy( null ), true, "should be true" );
 assert.equal( falzy( NaN ), true, "should be true" );
 assert.equal( falzy( 0/0 ), true, "should be true" );
 assert.equal( falzy( "" ), true, "should be true" );
+console.log( "ok" );
