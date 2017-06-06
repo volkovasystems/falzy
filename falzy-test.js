@@ -4,6 +4,7 @@ const falzy = require( "./falzy.js" );
 
 assert.equal( falzy( "hello" ), false, "should be false" );
 assert.equal( falzy( { } ), false, "should be false" );
+assert.equal( falzy( [ ] ), false, "should be false" );
 assert.equal( falzy( function( ){ } ), false, "should be false" );
 assert.equal( falzy( 123 ), false, "should be false" );
 assert.equal( falzy( false ), false, "should be false" );
