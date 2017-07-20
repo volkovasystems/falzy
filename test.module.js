@@ -176,16 +176,6 @@ describe( "falzy", ( ) => {
 		} );
 
 	} );
-	/*
-	describe( "`falzy( 0 )`", ( ) => {
-
-		it( should return false, ( ) => {
-			let result = browser.url( bridgeURL ).execute( ( ) => falzy( 0 ) );
-
-			assert.equal( result.value, false );
-		} );
-
-	} );
 
 	describe( "`falzy( false )`", ( ) => {
 
@@ -206,7 +196,7 @@ describe( "falzy", ( ) => {
 		} );
 
 	} );
-	*/
+
 	//: @end-bridge
 
 } );
