@@ -1,6 +1,13 @@
 
 const assert = require( "assert" );
+
+//: @server:
 const falzy = require( "./falzy.js" );
+//: @end-server
+
+//: @client:
+const falzy = require( "./falzy.support.js" );
+//: @end-client
 
 assert.equal( falzy( undefined ), true, "should be true" );
 
