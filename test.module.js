@@ -87,5 +87,3 @@ assert.equal( falzy( true ), false, "should be false" );
 assert.equal( falzy( Infinity ), false, "should be false" );
 
 assert.equal( falzy( 0 ), false, "should be false" );
-
-console.log( "ok" );
