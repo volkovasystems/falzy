@@ -1,54 +1,26 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>falzy unit test</title>
+		<meta charset="utf-8">
 
-		<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
+		<title>test:falzy</title>
 
-		<script type="application/javascript" src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
-
-		<script type="application/javascript" src="./falzy.deploy.js"></script>
+		<link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css"/>
 	</head>
 
 	<body>
-		<div id="qunit"></div>
+		<div id="mocha"></div>
 
-		<div id="qunit-fixture"></div>
+		<script type="application/javascript" src="https://unpkg.com/mocha/mocha.js"></script>
 
 		<script type="application/javascript">
-			QUnit.test( "falzy unit test", function( assert ) {
+			mocha.setup( "bdd" );
+		</script>
 
-				assert.equal( falzy( undefined ), true, "should be true" );
+		<script type="application/javascript" src="./test.deploy.js"></script>
 
-				assert.equal( falzy( ), true, "should be true" );
-
-				assert.equal( falzy( null ), true, "should be true" );
-
-				assert.equal( falzy( NaN ), true, "should be true" );
-
-				assert.equal( falzy( 0/0 ), true, "should be true" );
-
-				assert.equal( falzy( "" ), true, "should be true" );
-
-				assert.equal( falzy( "hello" ), false, "should be false" );
-
-				assert.equal( falzy( { } ), false, "should be false" );
-
-				assert.equal( falzy( [ ] ), false, "should be false" );
-
-				assert.equal( falzy( function( ){ } ), false, "should be false" );
-
-				assert.equal( falzy( 123 ), false, "should be false" );
-
-				assert.equal( falzy( false ), false, "should be false" );
-
-				assert.equal( falzy( true ), false, "should be false" );
-
-				assert.equal( falzy( Infinity ), false, "should be false" );
-
-				assert.equal( falzy( 0 ), false, "should be false" );
-				
-			} );
+		<script type="application/javascript">
+			mocha.run( );
 		</script>
 	</body>
 </html>
