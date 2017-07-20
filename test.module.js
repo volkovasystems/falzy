@@ -82,6 +82,7 @@ describe( "falzy", ( ) => {
 	//: @end-bridge
 
 	//: @bridge:
+	
 	let directory = __dirname;
 	let testBridge = path.resolve( directory, "bridge.html" );
 	let bridgeURL = `file://${ testBridge }`;
@@ -95,6 +96,27 @@ describe( "falzy", ( ) => {
 		} );
 
 	} );
+
+	describe( "`falzy( undefined )`", ( ) => {
+
+		it( "should return true", ( ) => {
+			let result = browser.url( bridgeURL ).execute( ( ) => falzy( undefined ) );
+
+			assert.equal( result.value, true );
+		} );
+
+	} );
+
+	describe( "`falzy( null )`", ( ) => {
+
+		it( "should return true", ( ) => {
+			let result = browser.url( bridgeURL ).execute( ( ) => falzy( null ) );
+
+			assert.equal( result.value, true );
+		} );
+
+	} );
+
 	//: @end-bridge
 
 } );
