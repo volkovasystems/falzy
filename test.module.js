@@ -79,5 +79,22 @@ describe( "falzy", ( ) => {
 	describe( "`falzy( false )`", ( ) => it( "should return false", ( ) => assert.equal( falzy( false ), false ) ) );
 
 	describe( "`falzy( Infinity )`", ( ) => it( "should return false", ( ) => assert.equal( falzy( Infinity ), false ) ) );
-	
+	//: @end-bridge
+
+	//: @bridge:
+	let directory = __dirname;
+	let testBridge = path.resolve( directory, "bridge.html" );
+	let bridgeURL = `file://${ testBridge }`;
+
+	describe( "`falzy( )`", ( ) => {
+
+		it( "should return true", ( ) => {
+			//let result = browser.url( bridgeURL ).execute( ( ) => falzy( ) );
+
+			//console.log( result );
+		} );
+		
+	} );
+	//: @end-bridge
+
 } );
