@@ -89,11 +89,11 @@ describe( "falzy", ( ) => {
 	describe( "`falzy( )`", ( ) => {
 
 		it( "should return true", ( ) => {
-			//let result = browser.url( bridgeURL ).execute( ( ) => falzy( ) );
+			let result = browser.url( bridgeURL ).execute( ( ) => falzy( ) );
 
-			//console.log( result );
+			assert.equal( result.value, true );
 		} );
-		
+
 	} );
 	//: @end-bridge
 
