@@ -45,13 +45,9 @@ const assert = require( "assert" );
 const falzy = require( "./falzy.js" );
 //: @end-server
 
-//: @client:
-const falzy = require( "./falzy.support.js" );
-//: @end-client
 
-//: @bridge:
-const path = require( "path" );
-//: @end-bridge
+
+
 
 describe( "falzy", ( ) => {
 	//: @!bridge:
@@ -80,109 +76,6 @@ describe( "falzy", ( ) => {
 	describe( "`falzy( Infinity )`", ( ) => it( "should return false", ( ) => assert.equal( falzy( Infinity ), false ) ) );
 	//: @end-bridge
 
-	//: @bridge:
-	let directory = __dirname;
-	let testBridge = path.resolve( directory, "bridge.html" );
-	let bridgeURL = `file://${ testBridge }`;
-
-	describe( "`falzy( )`", ( ) => {
-		it( "should return true", ( ) => {
-			let result = browser.url( bridgeURL ).execute( ( ) => falzy( ) );
-
-			assert.equal( result.value, true );
-		} );
-	} );
-
-	describe( "`falzy( undefined )`", ( ) => {
-
-		it( "should return true", ( ) => {
-			let result = browser.url( bridgeURL ).execute( ( ) => falzy( undefined ) );
-
-			assert.equal( result.value, true );
-		} );
-	} );
-
-	describe( "`falzy( null )`", ( ) => {
-		it( "should return true", ( ) => {
-			let result = browser.url( bridgeURL ).execute( ( ) => falzy( null ) );
-
-			assert.equal( result.value, true );
-		} );
-	} );
-
-	describe( "`falzy( NaN )`", ( ) => {
-		it( "should return true", ( ) => {
-			let result = browser.url( bridgeURL ).execute( ( ) => falzy( NaN ) );
-
-			assert.equal( result.value, true );
-		} );
-
-	} );
-
-	describe( "`falzy( 0/0 )`", ( ) => {
-		it( "should return true", ( ) => {
-			let result = browser.url( bridgeURL ).execute( ( ) => falzy( 0/0 ) );
-
-			assert.equal( result.value, true );
-		} );
-	} );
-
-	describe( "`falzy( '' )`", ( ) => {
-		it( "should return true", ( ) => {
-			let result = browser.url( bridgeURL ).execute( ( ) => falzy( '' ) );
-
-			assert.equal( result.value, true );
-		} );
-	} );
-
-	describe( "`falzy( { } )`", ( ) => {
-		it( "should return false", ( ) => {
-			let result = browser.url( bridgeURL ).execute( ( ) => falzy( { } ) );
-
-			assert.equal( result.value, false );
-		} );
-	} );
-
-	describe( "`falzy( [ ] )`", ( ) => {
-		it( "should return false", ( ) => {
-			let result = browser.url( bridgeURL ).execute( ( ) => falzy( [ ] ) );
-
-			assert.equal( result.value, false );
-		} );
-	} );
-
-	describe( "`falzy( function( ){ } )`", ( ) => {
-		it( "should return false", ( ) => {
-			let result = browser.url( bridgeURL ).execute( ( ) => falzy( function( ){ } ) );
-
-			assert.equal( result.value, false );
-		} );
-	} );
-
-	describe( "`falzy( 0 )`", ( ) => {
-		it( "should return false", ( ) => {
-			let result = browser.url( bridgeURL ).execute( ( ) => falzy( 0 ) );
-
-			assert.equal( result.value, false );
-		} );
-
-	} );
-
-	describe( "`falzy( false )`", ( ) => {
-		it( "should return false", ( ) => {
-			let result = browser.url( bridgeURL ).execute( ( ) => falzy( false ) );
-
-			assert.equal( result.value, false );
-		} );
-	} );
-
-	describe( "`falzy( Infinity )`", ( ) => {
-		it( "should return false", ( ) => {
-			let result = browser.url( bridgeURL ).execute( ( ) => falzy( Infinity ) );
-
-			assert.equal( result.value, false );
-		} );
-	} );
-	//: @end-bridge
+	
 
 } );

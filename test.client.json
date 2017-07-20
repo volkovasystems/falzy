@@ -1,0 +1,435 @@
+{
+	"state": {
+		"passed": 12,
+		"failed": 0,
+		"skipped": 0
+	},
+	"start": "2017-07-20T15:42:58.762Z",
+	"end": "2017-07-20T15:43:36.116Z",
+	"capabilities": {
+		"browserName": "chrome",
+		"chromeOptions": {
+			"args": [
+				"disable-gpu",
+				"headless"
+			]
+		}
+	},
+	"host": "127.0.0.1",
+	"port": 4444,
+	"baseUrl": "http://localhost",
+	"framework": "mocha",
+	"mochaOpts": {
+		"timeout": 10000,
+		"ui": "bdd"
+	},
+	"suites": [
+		{
+			"name": "falzy",
+			"duration": 0,
+			"start": "2017-07-20T15:43:35.496Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "falzy",
+			"duration": 442,
+			"start": "2017-07-20T15:43:35.497Z",
+			"end": "2017-07-20T15:43:35.939Z",
+			"tests": [],
+			"hooks": [
+				{
+					"start": "2017-07-20T15:43:35.498Z",
+					"end": "2017-07-20T15:43:35.499Z",
+					"duration": 1,
+					"title": "\"before each\" hook",
+					"associatedSuite": "falzy",
+					"associatedTest": "should return true"
+				},
+				{
+					"start": "2017-07-20T15:43:35.562Z",
+					"end": "2017-07-20T15:43:35.562Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "falzy",
+					"associatedTest": "should return true"
+				},
+				{
+					"start": "2017-07-20T15:43:35.563Z",
+					"end": "2017-07-20T15:43:35.563Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "falzy",
+					"associatedTest": "should return true"
+				},
+				{
+					"start": "2017-07-20T15:43:35.594Z",
+					"end": "2017-07-20T15:43:35.595Z",
+					"duration": 1,
+					"title": "\"after each\" hook",
+					"associatedSuite": "falzy",
+					"associatedTest": "should return true"
+				},
+				{
+					"start": "2017-07-20T15:43:35.595Z",
+					"end": "2017-07-20T15:43:35.595Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "falzy",
+					"associatedTest": "should return true"
+				},
+				{
+					"start": "2017-07-20T15:43:35.630Z",
+					"end": "2017-07-20T15:43:35.630Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "falzy",
+					"associatedTest": "should return true"
+				},
+				{
+					"start": "2017-07-20T15:43:35.631Z",
+					"end": "2017-07-20T15:43:35.631Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "falzy",
+					"associatedTest": "should return true"
+				},
+				{
+					"start": "2017-07-20T15:43:35.665Z",
+					"end": "2017-07-20T15:43:35.665Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "falzy",
+					"associatedTest": "should return true"
+				},
+				{
+					"start": "2017-07-20T15:43:35.666Z",
+					"end": "2017-07-20T15:43:35.666Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "falzy",
+					"associatedTest": "should return true"
+				},
+				{
+					"start": "2017-07-20T15:43:35.697Z",
+					"end": "2017-07-20T15:43:35.697Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "falzy",
+					"associatedTest": "should return true"
+				},
+				{
+					"start": "2017-07-20T15:43:35.697Z",
+					"end": "2017-07-20T15:43:35.698Z",
+					"duration": 1,
+					"title": "\"before each\" hook",
+					"associatedSuite": "falzy",
+					"associatedTest": "should return true"
+				},
+				{
+					"start": "2017-07-20T15:43:35.731Z",
+					"end": "2017-07-20T15:43:35.731Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "falzy",
+					"associatedTest": "should return true"
+				},
+				{
+					"start": "2017-07-20T15:43:35.732Z",
+					"end": "2017-07-20T15:43:35.732Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "falzy",
+					"associatedTest": "should return false"
+				},
+				{
+					"start": "2017-07-20T15:43:35.761Z",
+					"end": "2017-07-20T15:43:35.762Z",
+					"duration": 1,
+					"title": "\"after each\" hook",
+					"associatedSuite": "falzy",
+					"associatedTest": "should return false"
+				},
+				{
+					"start": "2017-07-20T15:43:35.762Z",
+					"end": "2017-07-20T15:43:35.763Z",
+					"duration": 1,
+					"title": "\"before each\" hook",
+					"associatedSuite": "falzy",
+					"associatedTest": "should return false"
+				},
+				{
+					"start": "2017-07-20T15:43:35.794Z",
+					"end": "2017-07-20T15:43:35.794Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "falzy",
+					"associatedTest": "should return false"
+				},
+				{
+					"start": "2017-07-20T15:43:35.796Z",
+					"end": "2017-07-20T15:43:35.796Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "falzy",
+					"associatedTest": "should return false"
+				},
+				{
+					"start": "2017-07-20T15:43:35.839Z",
+					"end": "2017-07-20T15:43:35.839Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "falzy",
+					"associatedTest": "should return false"
+				},
+				{
+					"start": "2017-07-20T15:43:35.840Z",
+					"end": "2017-07-20T15:43:35.841Z",
+					"duration": 1,
+					"title": "\"before each\" hook",
+					"associatedSuite": "falzy",
+					"associatedTest": "should return false"
+				},
+				{
+					"start": "2017-07-20T15:43:35.873Z",
+					"end": "2017-07-20T15:43:35.873Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "falzy",
+					"associatedTest": "should return false"
+				},
+				{
+					"start": "2017-07-20T15:43:35.873Z",
+					"end": "2017-07-20T15:43:35.873Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "falzy",
+					"associatedTest": "should return false"
+				},
+				{
+					"start": "2017-07-20T15:43:35.904Z",
+					"end": "2017-07-20T15:43:35.904Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "falzy",
+					"associatedTest": "should return false"
+				},
+				{
+					"start": "2017-07-20T15:43:35.904Z",
+					"end": "2017-07-20T15:43:35.904Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "falzy",
+					"associatedTest": "should return false"
+				},
+				{
+					"start": "2017-07-20T15:43:35.938Z",
+					"end": "2017-07-20T15:43:35.938Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "falzy",
+					"associatedTest": "should return false"
+				},
+				{
+					"start": "2017-07-20T15:43:35.939Z",
+					"end": "2017-07-20T15:43:35.939Z",
+					"duration": 0,
+					"title": "\"after all\" hook",
+					"associatedSuite": "falzy"
+				}
+			]
+		},
+		{
+			"name": "`falzy( )`",
+			"duration": 65,
+			"start": "2017-07-20T15:43:35.498Z",
+			"end": "2017-07-20T15:43:35.563Z",
+			"tests": [
+				{
+					"name": "should return true",
+					"start": "2017-07-20T15:43:35.498Z",
+					"end": "2017-07-20T15:43:35.562Z",
+					"duration": 64,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`falzy( undefined )`",
+			"duration": 32,
+			"start": "2017-07-20T15:43:35.563Z",
+			"end": "2017-07-20T15:43:35.595Z",
+			"tests": [
+				{
+					"name": "should return true",
+					"start": "2017-07-20T15:43:35.563Z",
+					"end": "2017-07-20T15:43:35.594Z",
+					"duration": 31,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`falzy( null )`",
+			"duration": 35,
+			"start": "2017-07-20T15:43:35.595Z",
+			"end": "2017-07-20T15:43:35.630Z",
+			"tests": [
+				{
+					"name": "should return true",
+					"start": "2017-07-20T15:43:35.595Z",
+					"end": "2017-07-20T15:43:35.630Z",
+					"duration": 35,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`falzy( NaN )`",
+			"duration": 34,
+			"start": "2017-07-20T15:43:35.631Z",
+			"end": "2017-07-20T15:43:35.665Z",
+			"tests": [
+				{
+					"name": "should return true",
+					"start": "2017-07-20T15:43:35.631Z",
+					"end": "2017-07-20T15:43:35.665Z",
+					"duration": 34,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`falzy( 0/0 )`",
+			"duration": 32,
+			"start": "2017-07-20T15:43:35.665Z",
+			"end": "2017-07-20T15:43:35.697Z",
+			"tests": [
+				{
+					"name": "should return true",
+					"start": "2017-07-20T15:43:35.665Z",
+					"end": "2017-07-20T15:43:35.697Z",
+					"duration": 32,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`falzy( '' )`",
+			"duration": 34,
+			"start": "2017-07-20T15:43:35.697Z",
+			"end": "2017-07-20T15:43:35.731Z",
+			"tests": [
+				{
+					"name": "should return true",
+					"start": "2017-07-20T15:43:35.697Z",
+					"end": "2017-07-20T15:43:35.730Z",
+					"duration": 33,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`falzy( { } )`",
+			"duration": 30,
+			"start": "2017-07-20T15:43:35.732Z",
+			"end": "2017-07-20T15:43:35.762Z",
+			"tests": [
+				{
+					"name": "should return false",
+					"start": "2017-07-20T15:43:35.732Z",
+					"end": "2017-07-20T15:43:35.761Z",
+					"duration": 29,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`falzy( [ ] )`",
+			"duration": 32,
+			"start": "2017-07-20T15:43:35.762Z",
+			"end": "2017-07-20T15:43:35.794Z",
+			"tests": [
+				{
+					"name": "should return false",
+					"start": "2017-07-20T15:43:35.762Z",
+					"end": "2017-07-20T15:43:35.794Z",
+					"duration": 32,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`falzy( function( ){ } )`",
+			"duration": 46,
+			"start": "2017-07-20T15:43:35.794Z",
+			"end": "2017-07-20T15:43:35.840Z",
+			"tests": [
+				{
+					"name": "should return false",
+					"start": "2017-07-20T15:43:35.794Z",
+					"end": "2017-07-20T15:43:35.838Z",
+					"duration": 44,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`falzy( 0 )`",
+			"duration": 33,
+			"start": "2017-07-20T15:43:35.840Z",
+			"end": "2017-07-20T15:43:35.873Z",
+			"tests": [
+				{
+					"name": "should return false",
+					"start": "2017-07-20T15:43:35.840Z",
+					"end": "2017-07-20T15:43:35.873Z",
+					"duration": 33,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`falzy( false )`",
+			"duration": 31,
+			"start": "2017-07-20T15:43:35.873Z",
+			"end": "2017-07-20T15:43:35.904Z",
+			"tests": [
+				{
+					"name": "should return false",
+					"start": "2017-07-20T15:43:35.873Z",
+					"end": "2017-07-20T15:43:35.903Z",
+					"duration": 30,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`falzy( Infinity )`",
+			"duration": 34,
+			"start": "2017-07-20T15:43:35.904Z",
+			"end": "2017-07-20T15:43:35.938Z",
+			"tests": [
+				{
+					"name": "should return false",
+					"start": "2017-07-20T15:43:35.904Z",
+					"end": "2017-07-20T15:43:35.938Z",
+					"duration": 34,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		}
+	]
+}
