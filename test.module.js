@@ -9,6 +9,10 @@ const falzy = require( "./falzy.js" );
 const falzy = require( "./falzy.support.js" );
 //: @end-client
 
+//: @bridge:
+const path = require( "path" );
+//: @end-bridge
+
 assert.equal( falzy( undefined ), true, "should be true" );
 
 assert.equal( falzy( ), true, "should be true" );
