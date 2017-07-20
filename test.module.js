@@ -200,5 +200,3 @@ describe( "falzy", ( ) => {
 	//: @end-bridge
 
 } );
-
-console.log( falzy( 0 ) );
