@@ -58,30 +58,109 @@ const path = require( "path" );
 describe( "falzy", ( ) => {
 
 
-	describe( "`falzy( )`", ( ) => it( "should return true", ( ) => assert.equal( falzy( ), true ) ) );
+	describe( "`falzy( )`", ( ) => {
+		it( "should return true", ( ) => {
 
-	describe( "`falzy( undefined )`", ( ) => it( "should return true", ( ) => assert.equal( falzy( undefined ), true, "should be true" ) ) );
+			assert.equal( falzy( ), true );
 
-	describe( "`falzy( null )`", ( ) => it( "should return true", ( ) => assert.equal( falzy( null ), true ) ) );
+		} );
+	} );
 
-	describe( "`falzy( NaN )`", ( ) => it( "should return true", ( ) => assert.equal( falzy( NaN ), true ) ) );
 
-	describe( "`falzy( 0/0 )`", ( ) => it( "should return true", ( ) => assert.equal( falzy( 0/0 ), true ) ) );
+	describe( "`falzy( undefined )`", ( ) => {
+		it( "should return true", ( ) => {
 
-	describe( "`falzy( '' )`", ( ) => it( "should return true", ( ) => assert.equal( falzy( "" ), true ) ) );
+			assert.equal( falzy( undefined ), true );
 
-	describe( "`falzy( { } )`", ( ) => it( "should return false", ( ) => assert.equal( falzy( { } ), false ) ) );
+		} );
+	} );
 
-	describe( "`falzy( [ ] )`", ( ) => it( "should return false", ( ) => assert.equal( falzy( [ ] ), false ) ) );
 
-	describe( "`falzy( function( ){ } )`", ( ) => it( "should return false", ( ) => assert.equal( falzy( function( ){ } ), false ) ) );
+	describe( "`falzy( null )`", ( ) => {
+		it( "should return true", ( ) => {
 
-	describe( "`falzy( 0 )`", ( ) => it( "should return false", ( ) => assert.equal( falzy( 0 ), false ) ) );
+			assert.equal( falzy( null ), true );
 
-	describe( "`falzy( false )`", ( ) => it( "should return false", ( ) => assert.equal( falzy( false ), false ) ) );
+		} );
+	} );
 
-	describe( "`falzy( Infinity )`", ( ) => it( "should return false", ( ) => assert.equal( falzy( Infinity ), false ) ) );
 
+	describe( "`falzy( NaN )`", ( ) => {
+		it( "should return true", ( ) => {
+
+			assert.equal( falzy( NaN ), true );
+
+		} );
+	} );
+
+
+	describe( "`falzy( 0/0 )`", ( ) => {
+		it( "should return true", ( ) => {
+
+			assert.equal( falzy( 0/0 ), true );
+
+		} );
+	} );
+
+
+	describe( "`falzy( '' )`", ( ) => {
+		it( "should return true", ( ) => {
+
+			assert.equal( falzy( "" ), true );
+
+		} );
+	} );
+
+
+	describe( "`falzy( { } )`", ( ) => {
+		it( "should return false", ( ) => {
+
+			assert.equal( falzy( { } ), false );
+
+		} );
+	} );
+
+
+	describe( "`falzy( [ ] )`", ( ) => {
+		it( "should return false", ( ) => {
+
+			assert.equal( falzy( [ ] ), false );
+
+		} );
+	} );
+
+
+	describe( "`falzy( function( ){ } )`", ( ) => {
+		it( "should return false", ( ) => {
+
+			assert.equal( falzy( function( ){ } ), false );
+
+		} );
+	} );
+
+	describe( "`falzy( 0 )`", ( ) => {
+		it( "should return false", ( ) => {
+
+			assert.equal( falzy( 0 ), false );
+
+		} );
+	} );
+
+	describe( "`falzy( false )`", ( ) => {
+		it( "should return false", ( ) => {
+
+			assert.equal( falzy( false ), false );
+
+		} );
+	} );
+
+	describe( "`falzy( Infinity )`", ( ) => {
+		it( "should return false", ( ) => {
+
+			assert.equal( falzy( Infinity ), false );
+
+		} );
+	} );
 
 } );
 //: @end-server
