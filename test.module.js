@@ -53,8 +53,11 @@ const falzy = require( "./falzy.support.js" );
 const path = require( "path" );
 //: @end-bridge
 
+
+//: @!server:
 describe( "falzy", ( ) => {
-	//: @!bridge:
+
+
 	describe( "`falzy( )`", ( ) => it( "should return true", ( ) => assert.equal( falzy( ), true ) ) );
 
 	describe( "`falzy( undefined )`", ( ) => it( "should return true", ( ) => assert.equal( falzy( undefined ), true, "should be true" ) ) );
@@ -78,9 +81,17 @@ describe( "falzy", ( ) => {
 	describe( "`falzy( false )`", ( ) => it( "should return false", ( ) => assert.equal( falzy( false ), false ) ) );
 
 	describe( "`falzy( Infinity )`", ( ) => it( "should return false", ( ) => assert.equal( falzy( Infinity ), false ) ) );
-	//: @end-bridge
 
-	//: @bridge:
+
+} );
+//: @end-server
+
+
+//: @bridge:
+
+describe( "falzy", ( ) => {
+
+
 	let directory = __dirname;
 	let testBridge = path.resolve( directory, "bridge.html" );
 	let bridgeURL = `file://${ testBridge }`;
@@ -183,6 +194,8 @@ describe( "falzy", ( ) => {
 			assert.equal( result.value, false );
 		} );
 	} );
-	//: @end-bridge
+
 
 } );
+
+//: @end-bridge
