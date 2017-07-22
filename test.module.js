@@ -54,7 +54,7 @@ const path = require( "path" );
 //: @end-bridge
 
 
-//: @!server:
+//: @server:
 describe( "falzy", ( ) => {
 
 
