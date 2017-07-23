@@ -15,6 +15,7 @@ gulp-plumber \
 gulp-rename \
 gulp-replace \
 gulp-sourcemaps \
+istanbul \
 mocha \
 should \
 source-map-loader \
