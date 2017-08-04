@@ -39,7 +39,7 @@
 	@end-include
 */
 
-const assert = require( "assert" );
+const assert = require( "should" );
 
 //: @server:
 const falzy = require( "./falzy.js" );
@@ -316,7 +316,6 @@ describe( "falzy", ( ) => {
 
 			assert.equal( result.value, true );
 		} );
-
 	} );
 
 
@@ -329,9 +328,9 @@ describe( "falzy", ( ) => {
 	} );
 
 
-	describe( "`falzy( "" )`", ( ) => {
+	describe( "`falzy( '' )`", ( ) => {
 		it( "should be equal to true", ( ) => {
-			let result = browser.url( bridgeURL ).execute( ( ) => falzy( '' ) );
+			let result = browser.url( bridgeURL ).execute( ( ) => falzy( "" ) );
 
 			assert.equal( result.value, true );
 		} );
