@@ -59,7 +59,7 @@ describe( "falzy", ( ) => {
 
 
 	describe( "`falzy( )`", ( ) => {
-		it( "should return true", ( ) => {
+		it( "should be equal to true", ( ) => {
 
 			assert.equal( falzy( ), true );
 
@@ -68,7 +68,7 @@ describe( "falzy", ( ) => {
 
 
 	describe( "`falzy( undefined )`", ( ) => {
-		it( "should return true", ( ) => {
+		it( "should be equal to true", ( ) => {
 
 			assert.equal( falzy( undefined ), true );
 
@@ -77,7 +77,7 @@ describe( "falzy", ( ) => {
 
 
 	describe( "`falzy( null )`", ( ) => {
-		it( "should return true", ( ) => {
+		it( "should be equal to true", ( ) => {
 
 			assert.equal( falzy( null ), true );
 
@@ -86,7 +86,7 @@ describe( "falzy", ( ) => {
 
 
 	describe( "`falzy( NaN )`", ( ) => {
-		it( "should return true", ( ) => {
+		it( "should be equal to true", ( ) => {
 
 			assert.equal( falzy( NaN ), true );
 
@@ -95,7 +95,7 @@ describe( "falzy", ( ) => {
 
 
 	describe( "`falzy( 0/0 )`", ( ) => {
-		it( "should return true", ( ) => {
+		it( "should be equal to true", ( ) => {
 
 			assert.equal( falzy( 0/0 ), true );
 
@@ -104,7 +104,7 @@ describe( "falzy", ( ) => {
 
 
 	describe( "`falzy( '' )`", ( ) => {
-		it( "should return true", ( ) => {
+		it( "should be equal to true", ( ) => {
 
 			assert.equal( falzy( "" ), true );
 
@@ -113,7 +113,7 @@ describe( "falzy", ( ) => {
 
 
 	describe( "`falzy( { } )`", ( ) => {
-		it( "should return false", ( ) => {
+		it( "should be equal to false", ( ) => {
 
 			assert.equal( falzy( { } ), false );
 
@@ -122,7 +122,7 @@ describe( "falzy", ( ) => {
 
 
 	describe( "`falzy( [ ] )`", ( ) => {
-		it( "should return false", ( ) => {
+		it( "should be equal to false", ( ) => {
 
 			assert.equal( falzy( [ ] ), false );
 
@@ -131,7 +131,7 @@ describe( "falzy", ( ) => {
 
 
 	describe( "`falzy( function( ){ } )`", ( ) => {
-		it( "should return false", ( ) => {
+		it( "should be equal to false", ( ) => {
 
 			assert.equal( falzy( function( ){ } ), false );
 
@@ -139,7 +139,7 @@ describe( "falzy", ( ) => {
 	} );
 
 	describe( "`falzy( 0 )`", ( ) => {
-		it( "should return false", ( ) => {
+		it( "should be equal to false", ( ) => {
 
 			assert.equal( falzy( 0 ), false );
 
@@ -147,7 +147,7 @@ describe( "falzy", ( ) => {
 	} );
 
 	describe( "`falzy( false )`", ( ) => {
-		it( "should return false", ( ) => {
+		it( "should be equal to false", ( ) => {
 
 			assert.equal( falzy( false ), false );
 
@@ -155,7 +155,7 @@ describe( "falzy", ( ) => {
 	} );
 
 	describe( "`falzy( Infinity )`", ( ) => {
-		it( "should return false", ( ) => {
+		it( "should be equal to false", ( ) => {
 
 			assert.equal( falzy( Infinity ), false );
 
@@ -171,7 +171,7 @@ describe( "falzy", ( ) => {
 
 
 	describe( "`falzy( )`", ( ) => {
-		it( "should return true", ( ) => {
+		it( "should be equal to true", ( ) => {
 
 			assert.equal( falzy( ), true );
 
@@ -180,7 +180,7 @@ describe( "falzy", ( ) => {
 
 
 	describe( "`falzy( undefined )`", ( ) => {
-		it( "should return true", ( ) => {
+		it( "should be equal to true", ( ) => {
 
 			assert.equal( falzy( undefined ), true );
 
@@ -189,7 +189,7 @@ describe( "falzy", ( ) => {
 
 
 	describe( "`falzy( null )`", ( ) => {
-		it( "should return true", ( ) => {
+		it( "should be equal to true", ( ) => {
 
 			assert.equal( falzy( null ), true );
 
@@ -198,7 +198,7 @@ describe( "falzy", ( ) => {
 
 
 	describe( "`falzy( NaN )`", ( ) => {
-		it( "should return true", ( ) => {
+		it( "should be equal to true", ( ) => {
 
 			assert.equal( falzy( NaN ), true );
 
@@ -207,7 +207,7 @@ describe( "falzy", ( ) => {
 
 
 	describe( "`falzy( 0/0 )`", ( ) => {
-		it( "should return true", ( ) => {
+		it( "should be equal to true", ( ) => {
 
 			assert.equal( falzy( 0/0 ), true );
 
@@ -216,7 +216,7 @@ describe( "falzy", ( ) => {
 
 
 	describe( "`falzy( '' )`", ( ) => {
-		it( "should return true", ( ) => {
+		it( "should be equal to true", ( ) => {
 
 			assert.equal( falzy( "" ), true );
 
@@ -225,7 +225,7 @@ describe( "falzy", ( ) => {
 
 
 	describe( "`falzy( { } )`", ( ) => {
-		it( "should return false", ( ) => {
+		it( "should be equal to false", ( ) => {
 
 			assert.equal( falzy( { } ), false );
 
@@ -234,7 +234,7 @@ describe( "falzy", ( ) => {
 
 
 	describe( "`falzy( [ ] )`", ( ) => {
-		it( "should return false", ( ) => {
+		it( "should be equal to false", ( ) => {
 
 			assert.equal( falzy( [ ] ), false );
 
@@ -243,7 +243,7 @@ describe( "falzy", ( ) => {
 
 
 	describe( "`falzy( function( ){ } )`", ( ) => {
-		it( "should return false", ( ) => {
+		it( "should be equal to false", ( ) => {
 
 			assert.equal( falzy( function( ){ } ), false );
 
@@ -251,7 +251,7 @@ describe( "falzy", ( ) => {
 	} );
 
 	describe( "`falzy( 0 )`", ( ) => {
-		it( "should return false", ( ) => {
+		it( "should be equal to false", ( ) => {
 
 			assert.equal( falzy( 0 ), false );
 
@@ -259,7 +259,7 @@ describe( "falzy", ( ) => {
 	} );
 
 	describe( "`falzy( false )`", ( ) => {
-		it( "should return false", ( ) => {
+		it( "should be equal to false", ( ) => {
 
 			assert.equal( falzy( false ), false );
 
@@ -267,7 +267,7 @@ describe( "falzy", ( ) => {
 	} );
 
 	describe( "`falzy( Infinity )`", ( ) => {
-		it( "should return false", ( ) => {
+		it( "should be equal to false", ( ) => {
 
 			assert.equal( falzy( Infinity ), false );
 
@@ -284,7 +284,7 @@ describe( "falzy", ( ) => {
 	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
 
 	describe( "`falzy( )`", ( ) => {
-		it( "should return true", ( ) => {
+		it( "should be equal to true", ( ) => {
 			let result = browser.url( bridgeURL ).execute( ( ) => falzy( ) );
 
 			assert.equal( result.value, true );
@@ -293,7 +293,7 @@ describe( "falzy", ( ) => {
 
 
 	describe( "`falzy( undefined )`", ( ) => {
-		it( "should return true", ( ) => {
+		it( "should be equal to true", ( ) => {
 			let result = browser.url( bridgeURL ).execute( ( ) => falzy( undefined ) );
 
 			assert.equal( result.value, true );
@@ -302,7 +302,7 @@ describe( "falzy", ( ) => {
 
 
 	describe( "`falzy( null )`", ( ) => {
-		it( "should return true", ( ) => {
+		it( "should be equal to true", ( ) => {
 			let result = browser.url( bridgeURL ).execute( ( ) => falzy( null ) );
 
 			assert.equal( result.value, true );
@@ -311,7 +311,7 @@ describe( "falzy", ( ) => {
 
 
 	describe( "`falzy( NaN )`", ( ) => {
-		it( "should return true", ( ) => {
+		it( "should be equal to true", ( ) => {
 			let result = browser.url( bridgeURL ).execute( ( ) => falzy( NaN ) );
 
 			assert.equal( result.value, true );
@@ -321,7 +321,7 @@ describe( "falzy", ( ) => {
 
 
 	describe( "`falzy( 0/0 )`", ( ) => {
-		it( "should return true", ( ) => {
+		it( "should be equal to true", ( ) => {
 			let result = browser.url( bridgeURL ).execute( ( ) => falzy( 0/0 ) );
 
 			assert.equal( result.value, true );
@@ -330,7 +330,7 @@ describe( "falzy", ( ) => {
 
 
 	describe( "`falzy( "" )`", ( ) => {
-		it( "should return true", ( ) => {
+		it( "should be equal to true", ( ) => {
 			let result = browser.url( bridgeURL ).execute( ( ) => falzy( '' ) );
 
 			assert.equal( result.value, true );
@@ -339,7 +339,7 @@ describe( "falzy", ( ) => {
 
 
 	describe( "`falzy( { } )`", ( ) => {
-		it( "should return false", ( ) => {
+		it( "should be equal to false", ( ) => {
 			let result = browser.url( bridgeURL ).execute( ( ) => falzy( { } ) );
 
 			assert.equal( result.value, false );
@@ -348,7 +348,7 @@ describe( "falzy", ( ) => {
 
 
 	describe( "`falzy( [ ] )`", ( ) => {
-		it( "should return false", ( ) => {
+		it( "should be equal to false", ( ) => {
 			let result = browser.url( bridgeURL ).execute( ( ) => falzy( [ ] ) );
 
 			assert.equal( result.value, false );
@@ -357,7 +357,7 @@ describe( "falzy", ( ) => {
 
 
 	describe( "`falzy( function( ){ } )`", ( ) => {
-		it( "should return false", ( ) => {
+		it( "should be equal to false", ( ) => {
 			let result = browser.url( bridgeURL ).execute( ( ) => falzy( function( ){ } ) );
 
 			assert.equal( result.value, false );
@@ -366,7 +366,7 @@ describe( "falzy", ( ) => {
 
 
 	describe( "`falzy( 0 )`", ( ) => {
-		it( "should return false", ( ) => {
+		it( "should be equal to false", ( ) => {
 			let result = browser.url( bridgeURL ).execute( ( ) => falzy( 0 ) );
 
 			assert.equal( result.value, false );
@@ -376,7 +376,7 @@ describe( "falzy", ( ) => {
 
 
 	describe( "`falzy( false )`", ( ) => {
-		it( "should return false", ( ) => {
+		it( "should be equal to false", ( ) => {
 			let result = browser.url( bridgeURL ).execute( ( ) => falzy( false ) );
 
 			assert.equal( result.value, false );
@@ -385,7 +385,7 @@ describe( "falzy", ( ) => {
 
 
 	describe( "`falzy( Infinity )`", ( ) => {
-		it( "should return false", ( ) => {
+		it( "should be equal to false", ( ) => {
 			let result = browser.url( bridgeURL ).execute( ( ) => falzy( Infinity ) );
 
 			assert.equal( result.value, false );
