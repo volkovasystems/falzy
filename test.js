@@ -39,7 +39,7 @@
 	@end-include
 */
 
-const assert = require( "assert" );
+const assert = require( "should" );
 
 //: @server:
 const falzy = require( "./falzy.js" );
@@ -49,33 +49,119 @@ const falzy = require( "./falzy.js" );
 
 
 
+
+//: @server:
 describe( "falzy", ( ) => {
-	//: @!bridge:
-	describe( "`falzy( )`", ( ) => it( "should return true", ( ) => assert.equal( falzy( ), true ) ) );
 
-	describe( "`falzy( undefined )`", ( ) => it( "should return true", ( ) => assert.equal( falzy( undefined ), true, "should be true" ) ) );
 
-	describe( "`falzy( null )`", ( ) => it( "should return true", ( ) => assert.equal( falzy( null ), true ) ) );
+	describe( "`falzy( )`", ( ) => {
+		it( "should be equal to true", ( ) => {
 
-	describe( "`falzy( NaN )`", ( ) => it( "should return true", ( ) => assert.equal( falzy( NaN ), true ) ) );
+			assert.equal( falzy( ), true );
 
-	describe( "`falzy( 0/0 )`", ( ) => it( "should return true", ( ) => assert.equal( falzy( 0/0 ), true ) ) );
+		} );
+	} );
 
-	describe( "`falzy( '' )`", ( ) => it( "should return true", ( ) => assert.equal( falzy( "" ), true ) ) );
 
-	describe( "`falzy( { } )`", ( ) => it( "should return false", ( ) => assert.equal( falzy( { } ), false ) ) );
+	describe( "`falzy( undefined )`", ( ) => {
+		it( "should be equal to true", ( ) => {
 
-	describe( "`falzy( [ ] )`", ( ) => it( "should return false", ( ) => assert.equal( falzy( [ ] ), false ) ) );
+			assert.equal( falzy( undefined ), true );
 
-	describe( "`falzy( function( ){ } )`", ( ) => it( "should return false", ( ) => assert.equal( falzy( function( ){ } ), false ) ) );
+		} );
+	} );
 
-	describe( "`falzy( 0 )`", ( ) => it( "should return false", ( ) => assert.equal( falzy( 0 ), false ) ) );
 
-	describe( "`falzy( false )`", ( ) => it( "should return false", ( ) => assert.equal( falzy( false ), false ) ) );
+	describe( "`falzy( null )`", ( ) => {
+		it( "should be equal to true", ( ) => {
 
-	describe( "`falzy( Infinity )`", ( ) => it( "should return false", ( ) => assert.equal( falzy( Infinity ), false ) ) );
-	//: @end-bridge
+			assert.equal( falzy( null ), true );
 
-	
+		} );
+	} );
+
+
+	describe( "`falzy( NaN )`", ( ) => {
+		it( "should be equal to true", ( ) => {
+
+			assert.equal( falzy( NaN ), true );
+
+		} );
+	} );
+
+
+	describe( "`falzy( 0/0 )`", ( ) => {
+		it( "should be equal to true", ( ) => {
+
+			assert.equal( falzy( 0/0 ), true );
+
+		} );
+	} );
+
+
+	describe( "`falzy( '' )`", ( ) => {
+		it( "should be equal to true", ( ) => {
+
+			assert.equal( falzy( "" ), true );
+
+		} );
+	} );
+
+
+	describe( "`falzy( { } )`", ( ) => {
+		it( "should be equal to false", ( ) => {
+
+			assert.equal( falzy( { } ), false );
+
+		} );
+	} );
+
+
+	describe( "`falzy( [ ] )`", ( ) => {
+		it( "should be equal to false", ( ) => {
+
+			assert.equal( falzy( [ ] ), false );
+
+		} );
+	} );
+
+
+	describe( "`falzy( function( ){ } )`", ( ) => {
+		it( "should be equal to false", ( ) => {
+
+			assert.equal( falzy( function( ){ } ), false );
+
+		} );
+	} );
+
+	describe( "`falzy( 0 )`", ( ) => {
+		it( "should be equal to false", ( ) => {
+
+			assert.equal( falzy( 0 ), false );
+
+		} );
+	} );
+
+	describe( "`falzy( false )`", ( ) => {
+		it( "should be equal to false", ( ) => {
+
+			assert.equal( falzy( false ), false );
+
+		} );
+	} );
+
+	describe( "`falzy( Infinity )`", ( ) => {
+		it( "should be equal to false", ( ) => {
+
+			assert.equal( falzy( Infinity ), false );
+
+		} );
+	} );
 
 } );
+//: @end-server
+
+
+
+
+

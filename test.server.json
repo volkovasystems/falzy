@@ -1,186 +1,186 @@
 {
-	"stats": {
-		"suites": 13,
-		"tests": 12,
-		"passes": 12,
-		"pending": 0,
-		"failures": 0,
-		"start": "2017-07-20T15:42:57.715Z",
-		"end": "2017-07-20T15:42:57.720Z",
-		"duration": 5
-	},
-	"tests": [
-		{
-			"title": "should return true",
-			"fullTitle": "falzy `falzy( )` should return true",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should return true",
-			"fullTitle": "falzy `falzy( undefined )` should return true",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should return true",
-			"fullTitle": "falzy `falzy( null )` should return true",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should return true",
-			"fullTitle": "falzy `falzy( NaN )` should return true",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should return true",
-			"fullTitle": "falzy `falzy( 0/0 )` should return true",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should return true",
-			"fullTitle": "falzy `falzy( '' )` should return true",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should return false",
-			"fullTitle": "falzy `falzy( { } )` should return false",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should return false",
-			"fullTitle": "falzy `falzy( [ ] )` should return false",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should return false",
-			"fullTitle": "falzy `falzy( function( ){ } )` should return false",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should return false",
-			"fullTitle": "falzy `falzy( 0 )` should return false",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should return false",
-			"fullTitle": "falzy `falzy( false )` should return false",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should return false",
-			"fullTitle": "falzy `falzy( Infinity )` should return false",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		}
-	],
-	"pending": [],
-	"failures": [],
-	"passes": [
-		{
-			"title": "should return true",
-			"fullTitle": "falzy `falzy( )` should return true",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should return true",
-			"fullTitle": "falzy `falzy( undefined )` should return true",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should return true",
-			"fullTitle": "falzy `falzy( null )` should return true",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should return true",
-			"fullTitle": "falzy `falzy( NaN )` should return true",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should return true",
-			"fullTitle": "falzy `falzy( 0/0 )` should return true",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should return true",
-			"fullTitle": "falzy `falzy( '' )` should return true",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should return false",
-			"fullTitle": "falzy `falzy( { } )` should return false",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should return false",
-			"fullTitle": "falzy `falzy( [ ] )` should return false",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should return false",
-			"fullTitle": "falzy `falzy( function( ){ } )` should return false",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should return false",
-			"fullTitle": "falzy `falzy( 0 )` should return false",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should return false",
-			"fullTitle": "falzy `falzy( false )` should return false",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should return false",
-			"fullTitle": "falzy `falzy( Infinity )` should return false",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		}
-	]
+  "stats": {
+    "suites": 13,
+    "tests": 12,
+    "passes": 12,
+    "pending": 0,
+    "failures": 0,
+    "start": "2017-08-05T11:25:22.186Z",
+    "end": "2017-08-05T11:25:22.195Z",
+    "duration": 9
+  },
+  "tests": [
+    {
+      "title": "should be equal to true",
+      "fullTitle": "falzy `falzy( )` should be equal to true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to true",
+      "fullTitle": "falzy `falzy( undefined )` should be equal to true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to true",
+      "fullTitle": "falzy `falzy( null )` should be equal to true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to true",
+      "fullTitle": "falzy `falzy( NaN )` should be equal to true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to true",
+      "fullTitle": "falzy `falzy( 0/0 )` should be equal to true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to true",
+      "fullTitle": "falzy `falzy( '' )` should be equal to true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to false",
+      "fullTitle": "falzy `falzy( { } )` should be equal to false",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to false",
+      "fullTitle": "falzy `falzy( [ ] )` should be equal to false",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to false",
+      "fullTitle": "falzy `falzy( function( ){ } )` should be equal to false",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to false",
+      "fullTitle": "falzy `falzy( 0 )` should be equal to false",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to false",
+      "fullTitle": "falzy `falzy( false )` should be equal to false",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to false",
+      "fullTitle": "falzy `falzy( Infinity )` should be equal to false",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ],
+  "pending": [],
+  "failures": [],
+  "passes": [
+    {
+      "title": "should be equal to true",
+      "fullTitle": "falzy `falzy( )` should be equal to true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to true",
+      "fullTitle": "falzy `falzy( undefined )` should be equal to true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to true",
+      "fullTitle": "falzy `falzy( null )` should be equal to true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to true",
+      "fullTitle": "falzy `falzy( NaN )` should be equal to true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to true",
+      "fullTitle": "falzy `falzy( 0/0 )` should be equal to true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to true",
+      "fullTitle": "falzy `falzy( '' )` should be equal to true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to false",
+      "fullTitle": "falzy `falzy( { } )` should be equal to false",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to false",
+      "fullTitle": "falzy `falzy( [ ] )` should be equal to false",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to false",
+      "fullTitle": "falzy `falzy( function( ){ } )` should be equal to false",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to false",
+      "fullTitle": "falzy `falzy( 0 )` should be equal to false",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to false",
+      "fullTitle": "falzy `falzy( false )` should be equal to false",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to false",
+      "fullTitle": "falzy `falzy( Infinity )` should be equal to false",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
 }
