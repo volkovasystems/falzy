@@ -134,6 +134,7 @@ describe( "falzy", ( ) => {
 		} );
 	} );
 
+
 	describe( "`falzy( 0 )`", ( ) => {
 		it( "should be equal to false", ( ) => {
 
@@ -141,6 +142,7 @@ describe( "falzy", ( ) => {
 
 		} );
 	} );
+
 
 	describe( "`falzy( false )`", ( ) => {
 		it( "should be equal to false", ( ) => {
@@ -150,6 +152,7 @@ describe( "falzy", ( ) => {
 		} );
 	} );
 
+
 	describe( "`falzy( Infinity )`", ( ) => {
 		it( "should be equal to false", ( ) => {
 
@@ -157,6 +160,7 @@ describe( "falzy", ( ) => {
 
 		} );
 	} );
+
 
 } );
 //: @end-server
