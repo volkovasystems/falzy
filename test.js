@@ -27,6 +27,18 @@
 		SOFTWARE.
 	@end-test-license
 
+	@test-configuration:
+		{
+			"package": "falzy",
+			"path": "falzy/test.module.js",
+			"file": "test.module.js",
+			"module": "test",
+			"author": "Richeve S. Bebedor",
+			"eMail": "richeve.bebedor@gmail.com",
+			"repository": "https://github.com/volkovasystems/falzy.git"
+		}
+	@end-test-configuration
+
 	@test-documentation:
 
 	@end-test-documentation
